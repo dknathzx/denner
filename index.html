@@ -1,161 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Diledge</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Inspired Site</title>
   <style>
-    /* Reset */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
+      background: #fff;
+      color: #111;
     }
-
     header {
-      background: #4CAF50;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2rem;
-      letter-spacing: 1px;
-    }
-
-    nav {
-      margin-top: 0.5rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .hero {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      height: 70vh;
-      text-align: center;
-      background: linear-gradient(135deg, #4CAF50, #2E7D32);
+      padding: 20px 50px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: #111;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+    }
+    .hero {
+      height: 90vh;
+      background: url("https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_1463,c_limit/f1cfdbea-407c-4f3c-9ad2-6a836b6b548f/nike-just-do-it.jpg") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 50px;
       color: white;
-      padding: 2rem;
     }
-
     .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 60px;
+      max-width: 500px;
+      line-height: 1.2;
     }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin-bottom: 2rem;
-    }
-
     .hero button {
-      padding: 0.8rem 1.5rem;
+      margin-top: 20px;
+      padding: 15px 30px;
       border: none;
-      border-radius: 5px;
-      background: white;
-      color: #4CAF50;
-      font-size: 1rem;
+      background: #111;
+      color: #fff;
+      font-size: 18px;
       cursor: pointer;
-      transition: 0.3s;
     }
-
-    .hero button:hover {
-      background: #eee;
-    }
-
-    section {
-      padding: 3rem 2rem;
+    .products {
+      padding: 60px 50px;
       text-align: center;
     }
-
-    .features {
+    .products h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+    }
+    .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
+      gap: 30px;
     }
-
-    .feature {
-      padding: 1.5rem;
+    .card {
+      border: 1px solid #eee;
       border-radius: 10px;
-      background: #f9f9f9;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      transition: 0.3s;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
     }
-
-    .feature:hover {
+    .card:hover {
       transform: translateY(-5px);
     }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
+    .card img {
+      width: 100%;
+      border-radius: 8px;
     }
-
-    footer p {
-      margin: 0.5rem 0;
+    .card h3 {
+      margin: 15px 0 10px;
+      font-size: 20px;
+    }
+    .card p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .card button {
+      background: #111;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Diledge</h1>
+    <h1>Nike</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
+      <ul>
+        <li><a href="#">New</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Welcome to Diledge 🚀</h2>
-    <p>We help you build, scale, and launch your digital presence with ease. 
-    This is your space to create something amazing.</p>
-    <button>Get Started</button>
+    <div>
+      <h2>Just Do It. Elevate Your Style.</h2>
+      <button>Shop Now</button>
+    </div>
   </section>
 
-  <section>
-    <h2>Our Features</h2>
-    <div class="features">
-      <div class="feature">
-        <h3>⚡ Fast Deployment</h3>
-        <p>Deploy your site in seconds with modern hosting solutions.</p>
+  <section class="products">
+    <h2>Featured Products</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f7d62e08-57ef-45f4-8f42-17d11f8ddf79/air-force-1-07-mens-shoes-5QFp5Z.png" alt="Nike Air Force 1">
+        <h3>Nike Air Force 1</h3>
+        <p>Classic style, modern comfort.</p>
+        <button>Buy Now</button>
       </div>
-      <div class="feature">
-        <h3>🌍 Global Access</h3>
-        <p>Your website is live worldwide with top-notch performance.</p>
+      <div class="card">
+        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6f4a9b28-fb0b-4741-9a2a-8af11f1c15c0/air-max-270-mens-shoes-KkLcGR.png" alt="Nike Air Max 270">
+        <h3>Nike Air Max 270</h3>
+        <p>Everyday comfort meets bold design.</p>
+        <button>Buy Now</button>
       </div>
-      <div class="feature">
-        <h3>🔒 Secure & Reliable</h3>
-        <p>We prioritize security and uptime for your online presence.</p>
+      <div class="card">
+        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ed8e84f9-87f3-49a0-b48c-58b7b2ad2f9b/pegasus-41-mens-road-running-shoes-vf1B4N.png" alt="Nike Pegasus 41">
+        <h3>Nike Pegasus 41</h3>
+        <p>Run faster, feel lighter.</p>
+        <button>Buy Now</button>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Diledge. All Rights Reserved.</p>
-    <p>Made with ❤️ and HTML</p>
+    <p>© 2025 Nike Inspired. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
