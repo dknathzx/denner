@@ -1,170 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nike Inspired Site</title>
+  <title>DILEDGE Navigation</title>
+  <!-- Import Glacial Indifference and Cooper Hewitt from Google Fonts or use @font-face if you have them locally -->
+  <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@700&family=Cooper+Hewitt:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
     body {
-      background: #fff;
-      color: #111;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
     }
-    header {
+    .navbar {
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      padding: 20px 50px;
-      background: #fff;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      padding: 20px 0 0 10px;
     }
-    header h1 {
-      font-size: 24px;
+    .logo {
+      font-size: 2em;
       font-weight: bold;
-      color: #111;
+      color: #001f4d; /* Navy Blue */
+      margin-right: 80px;
+      font-family: 'Glacial Indifference', Arial, sans-serif;
     }
-    nav ul {
+    .nav-links {
       display: flex;
-      list-style: none;
-      gap: 25px;
+      gap: 70px;
     }
-    nav a {
+    .nav-link {
+      font-size: 2em;
+      color: #333333; /* Dark Grey */
       text-decoration: none;
-      color: #111;
-      font-weight: 600;
+      font-family: 'Cooper Hewitt', Arial, sans-serif;
     }
-    .hero {
-      height: 90vh;
-      background: url("https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/w_1463,c_limit/f1cfdbea-407c-4f3c-9ad2-6a836b6b548f/nike-just-do-it.jpg") center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 50px;
-      color: white;
-    }
-    .hero h2 {
-      font-size: 60px;
-      max-width: 500px;
-      line-height: 1.2;
-    }
-    .hero button {
-      margin-top: 20px;
-      padding: 15px 30px;
-      border: none;
-      background: #111;
-      color: #fff;
-      font-size: 18px;
-      cursor: pointer;
-    }
-    .products {
-      padding: 60px 50px;
-      text-align: center;
-    }
-    .products h2 {
-      font-size: 36px;
-      margin-bottom: 40px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-    .card {
-      border: 1px solid #eee;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .card h3 {
-      margin: 15px 0 10px;
-      font-size: 20px;
-    }
-    .card p {
-      font-size: 14px;
-      margin-bottom: 10px;
-      color: #555;
-    }
-    .card button {
-      background: #111;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-    footer {
-      background: #111;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
+    .nav-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Nike</h1>
-    <nav>
-      <ul>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">Kids</a></li>
-        <li><a href="#">Sale</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div>
-      <h2>Just Do It. Elevate Your Style.</h2>
-      <button>Shop Now</button>
+  <nav class="navbar">
+    <div class="logo">DILEDGE</div>
+    <div class="nav-links">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">Stories</a>
+      <a class="nav-link" href="#">Thoughts</a>
+      <a class="nav-link" href="#">Classes</a>
+      <a class="nav-link" href="#">Reviews</a>
     </div>
-  </section>
-
-  <section class="products">
-    <h2>Featured Products</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f7d62e08-57ef-45f4-8f42-17d11f8ddf79/air-force-1-07-mens-shoes-5QFp5Z.png" alt="Nike Air Force 1">
-        <h3>Nike Air Force 1</h3>
-        <p>Classic style, modern comfort.</p>
-        <button>Buy Now</button>
-      </div>
-      <div class="card">
-        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6f4a9b28-fb0b-4741-9a2a-8af11f1c15c0/air-max-270-mens-shoes-KkLcGR.png" alt="Nike Air Max 270">
-        <h3>Nike Air Max 270</h3>
-        <p>Everyday comfort meets bold design.</p>
-        <button>Buy Now</button>
-      </div>
-      <div class="card">
-        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ed8e84f9-87f3-49a0-b48c-58b7b2ad2f9b/pegasus-41-mens-road-running-shoes-vf1B4N.png" alt="Nike Pegasus 41">
-        <h3>Nike Pegasus 41</h3>
-        <p>Run faster, feel lighter.</p>
-        <button>Buy Now</button>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Nike Inspired. All rights reserved.</p>
-  </footer>
+  </nav>
 
 </body>
 </html>
