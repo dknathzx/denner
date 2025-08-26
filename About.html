@@ -2,44 +2,59 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>About - DILEDGE</title>
+  <title>DILEDGE Navigation</title>
+  <!-- Import Glacial Indifference and Cooper Hewitt from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@700&family=Cooper+Hewitt:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
+
   <style>
     body {
-      font-family: 'Cooper Hewitt', Arial, sans-serif;
-      padding: 40px;
-      background-color: #ffffff;
-      color: #333333; /* Dark Grey */
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
     }
-    h1 {
+    .navbar {
+      display: flex;
+      align-items: center;
+      padding: 20px 0 0 10px;
+    }
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
       color: #001f4d; /* Navy Blue */
+      margin-right: 80px;
       font-family: 'Glacial Indifference', Arial, sans-serif;
     }
-    p {
-      font-size: 1.2em;
-      max-width: 800px;
+    .nav-links {
+      display: flex;
+      gap: 70px;
     }
-    a {
-      display: inline-block;
-      margin-top: 30px;
-      color: #001f4d;
+    .nav-link {
+      font-size: 2em;
+      color: #333333; /* Dark Grey */
       text-decoration: none;
-      font-weight: bold;
+      font-family: 'Cooper Hewitt', Arial, sans-serif;
     }
-    a:hover {
+    .nav-link:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>About DILEDGE</h1>
-  
-  <p>
-    This platform was created by <strong>Dwarakanath K Dinesh</strong> with the vision of sharing 
-    authentic content, personal thoughts, and honest reviews. Over time, as the community grows, 
-    it will also give space for readers and followers to contribute their own perspectives and reviews.
-  </p>
 
-  <a href="index.html">⬅ Back to Home</a>
+  <nav class="navbar">
+    <div class="logo">DILEDGE</div>
+    <div class="nav-links">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">Stories</a>
+      <a class="nav-link" href="#">Thoughts</a>
+      <a class="nav-link" href="#">Classes</a>
+      <a class="nav-link" href="#">Reviews</a>
+      <a class="nav-link" href="About.html">About</a>
+      <a class="nav-link" href="#">Help</a>
+    </div>
+  </nav>
+
 </body>
 </html>
