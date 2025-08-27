@@ -6,6 +6,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@700&family=Cooper+Hewitt:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
+    /* ==================== NEW ADDITIONS ==================== */
+    html, body {
+      overflow-x: hidden; /* hides horizontal scroll */
+      box-sizing: border-box;
+    }
+
+    .navbar, .nav-links, .nav-right {
+      flex-wrap: wrap; /* allows items to move to next line if needed */
+    }
+    /* ======================================================= */
+
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
@@ -25,7 +36,7 @@
     }
     .nav-links {
       display: flex;
-      gap: 70px;
+      gap: 20px; /* was 70px, reduced to fit screen */
     }
     .nav-link {
       font-size: 1.6em;
@@ -34,25 +45,22 @@
       font-family: 'Cooper Hewitt', Arial, sans-serif;
     }
     .nav-link {
-  text-decoration: none;
-  color: #333;
-  padding: 6px 12px;
-  border-radius: 8px;
-  transition: background 0.3s, color 0.3s;
-}
+      text-decoration: none;
+      color: #333;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background 0.3s, color 0.3s;
+    }
 
-.nav-link:hover {
-  background: #f0f0f0; /* light grey hover */
-}
+    .nav-link:hover {
+      background: #f0f0f0; /* light grey hover */
+    }
 
-.nav-link.active {
-  background: #001f4d; /* navy blue when selected */
-  color: white;
-}
+    .nav-link.active {
+      background: #001f4d; /* navy blue when selected */
+      color: white;
+    }
 
-    
-      
-    
     .nav-right {
       display: flex;
       gap: 10px;
@@ -76,6 +84,17 @@
     }
     .sign-in-btn:hover {
       background: #004080; /* lighter navy */
+    }
+
+    /* Optional responsive fix for small screens */
+    @media screen and (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .nav-right {
+        margin-top: 10px;
+      }
     }
   </style>
 </head>
@@ -101,18 +120,14 @@
     </div>
   </nav>
   <script>
-  const links = document.querySelectorAll('.nav-link');
-  links.forEach(link => {
-    link.addEventListener('click', function() {
-      links.forEach(l => l.classList.remove('active'));
-      this.classList.add('active');
+    const links = document.querySelectorAll('.nav-link');
+    links.forEach(link => {
+      link.addEventListener('click', function() {
+        links.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      });
     });
-  });
-</script>
-
+  </script>
 
 </body>
 </html>
-
-
-
