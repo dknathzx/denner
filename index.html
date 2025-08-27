@@ -1,132 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home - Diledge</title>
+  <meta charset="UTF-8">
+  <title>DILEDGE Navigation</title>
+  <!-- Import Glacial Indifference and Cooper Hewitt from Google Fonts or use @font-face if you have them locally -->
+  <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@700&family=Cooper+Hewitt:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ Add your favicon here -->
+  <link rel="icon" href="favicon.png" type="image/png">
+
   <style>
-    /* Reset */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      line-height: 3.1;
-      color: #000080;
-      background: #f4f4f4;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
     }
-
-    header {
-      background: #FFD700;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
+    .navbar {
+      display: flex;
+      align-items: center;
+      padding: 20px 0 0 10px;
     }
-
-    header h1 {
-      font-size: 2rem;
-      letter-spacing: 1px;
-    }
-
-    nav {
-      margin-top: 0.5rem;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
+    .logo {
+      font-size: 2em;
       font-weight: bold;
-      transition: 0.3s;
+      color: #001f4d; /* Navy Blue */
+      margin-right: 80px;
+      font-family: 'Glacial Indifference', Arial, sans-serif;
     }
-
-    nav a:hover {
+    .nav-links {
+      display: flex;
+      gap: 70px;
+    }
+    .nav-link {
+      font-size: 2em;
+      color: #333333; /* Dark Grey */
+      text-decoration: none;
+      font-family: 'Cooper Hewitt', Arial, sans-serif;
+    }
+    .nav-link:hover {
       text-decoration: underline;
-    }
-
-    .hero {
-      padding: 4rem 2rem;
-      text-align: center;
-      background: linear-gradient(135deg, #4CAF50, #2E7D32);
-      color: white;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .content {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 2rem;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-
-    .content h3 {
-      color: #2E7D32;
-      margin-bottom: 1rem;
-    }
-
-    .content p {
-      margin-bottom: 1rem;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1.5rem;
-      margin-top: 2rem;
-    }
-
-    footer p {
-      margin: 0.5rem 0;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Diledge</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="About.html">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Welcome to Diledge</h2>
-    <p>
-      A space to share ideas, reviews, and thoughts — where creativity meets community.
-    </p>
-  </section>
+  <nav class="navbar">
+    <div class="logo">DILEDGE</div>
+    <div class="nav-links">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">Stories</a>
+      <a class="nav-link" href="#">Thoughts</a>
+      <a class="nav-link" href="#">Classes</a>
+      <a class="nav-link" href="#">Reviews</a>
+      <a class="nav-link" href="About.html">About</a>
+      <a class="nav-link" href="#">Help</a>
+    </div>
+  </nav>
 
-  <section class="content">
-    <h3>What is Diledge?</h3>
-    <p>
-      Diledge is a platform I created to express opinions, share reviews, and build a community around knowledge and creativity. 
-    </p>
-    <p>
-      Over time, users will be able to contribute, write reviews, and engage in meaningful discussions together.
-    </p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Diledge. All Rights Reserved.</p>
-    <p>Made with ❤️ and HTML</p>
-  </footer>
 </body>
 </html>
-
-
-
