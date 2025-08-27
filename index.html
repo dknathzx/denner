@@ -1,74 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>DILEDGE Navigation</title>
-  <!-- Import Glacial Indifference and Cooper Hewitt from Google Fonts or use @font-face if you have them locally -->
-  <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@700&family=Cooper+Hewitt:wght@400;700&display=swap" rel="stylesheet">
-  
-
-
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-    }
-    .navbar {
-      display: flex;
-      align-items: center;
-      padding: 20px 0 0 10px;
-    }
-    .logo {
-      font-size: 2em;
-      font-weight: bold;
-      color: #001f4d; /* Navy Blue */
-      margin-right: 80px;
-      font-family: 'Glacial Indifference', Arial, sans-serif;
-    }
-    .nav-links {
-      display: flex;
-      gap: 70px;
-    }
-    .nav-link {
-      font-size: 2em;
-      color: #333333; /* Dark Grey */
-      text-decoration: none;
-      font-family: 'Cooper Hewitt', Arial, sans-serif;
-    }
-    .nav-link:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-
-  <nav class="navbar">
+<nav class="navbar">
+  <!-- Left: Logo + Links -->
+  <div style="display: flex; align-items: center; gap: 50px;">
     <div class="logo">DILEDGE</div>
     <div class="nav-links">
-      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="index.html">Home</a>
       <a class="nav-link" href="#">Stories</a>
       <a class="nav-link" href="#">Thoughts</a>
       <a class="nav-link" href="#">Classes</a>
       <a class="nav-link" href="#">Reviews</a>
-      <a class="nav-link" href="About.html">About</a>
-
-
-      <a class="nav-link" href="#">Help</a>
-      
-
-      
+      <a class="nav-link" href="about.html">About</a>
     </div>
-  </nav>
+  </div>
 
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
+  <!-- Right: Search + Sign In -->
+  <div class="nav-right">
+    <input type="text" class="search-bar" placeholder="Search...">
+    <button class="sign-in-btn">Sign In</button>
+  </div>
+</nav>
