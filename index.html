@@ -1,106 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>DILEDGE Navigation</title>
-  <!-- Import Glacial Indifference and Cooper Hewitt from Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@700&family=Cooper+Hewitt:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 0 10px;
+    justify-content: space-between; /* ✅ keep nav-right pushed to top right */
+  }
+  .logo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #001f4d; /* Navy Blue */
+    margin-right: 80px;
+    font-family: 'Glacial Indifference', Arial, sans-serif;
+  }
+  .nav-links {
+    display: flex;
+    gap: 70px;
+  }
+  .nav-link {
+    font-size: 1.6em;
+    color: #333333; /* Dark Grey */
+    text-decoration: none;
+    font-family: 'Cooper Hewitt', Arial, sans-serif;
+  }
+  .nav-link:hover {
+    text-decoration: underline;
+  }
 
-  <!-- ✅ Favicon -->
-  <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  .nav-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-    }
-    .navbar {
-      display: flex;
-      align-items: center;
-      padding: 20px 0 0 10px;
-    }
-    .logo {
-      font-size: 2em;
-      font-weight: bold;
-      color: #001f4d; /* Navy Blue */
-      margin-right: 80px;
-      font-family: 'Glacial Indifference', Arial, sans-serif;
-    }
-    .nav-links {
-      display: flex;
-      gap: 70px;
-    }
-    .nav-link {
-      font-size: 1.6em;
-      color: #333333; /* Dark Grey */
-      text-decoration: none;
-      font-family: 'Cooper Hewitt', Arial, sans-serif;
-    }
-    .nav-link:hover {
-      text-decoration: underline;
-      .navbar {
-  justify-content: space-between; /* push right side content to top right */
-}
+  .search-bar {
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
 
-.nav-right {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.search-bar {
-  padding: 7px 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.sign-in-btn {
-  background-color: #001f4d; /* Navy Blue */
-  color: white;
-  border: none;
-  border-radius: 25px; /* Oval Shape */
-  padding: 8px 18px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: 0.3s ease; /* smooth effect */
-}
-
-.sign-in-btn:hover {
-  background-color: #004080; /* lighter navy on hover */
-}
-
-
-  </style>
-</head>
-<body>
-
-  <nav class="navbar">
-    <div class="logo">DILEDGE</div>
-    <div class="nav-links">
-      <a class="nav-link" href="#">Home</a>
-      <a class="nav-link" href="#">Stories</a>
-      <a class="nav-link" href="#">Thoughts</a>
-      <a class="nav-link" href="#">Classes</a>
-      <a class="nav-link" href="#">Reviews</a>
-      <a class="nav-link" href="About.html">About</a>
-      <a class="nav-link" href="#">Help</a>
-      <div class="nav-right">
-  <input type="text" class="search-bar" placeholder="Search...">
-  <button class="sign-in-btn">Sign In</button>
-        
-    </div>
-  </nav>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
+  .sign-in-btn {
+    background: #001f4d;  /* Navy Blue */
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;  /* ✅ Oval shape */
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .sign-in-btn:hover {
+    background: #004080; /* ✅ lighter navy on hover */
+  }
+</style>
