@@ -2,8 +2,11 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>DILEDGE - Home</title>
+  <title>DILEDGE Navigation</title>
+  <!-- Import Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@700&family=Cooper+Hewitt:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ Favicon -->
   <link rel="icon" href="favicon.png" type="image/png">
 
   <style>
@@ -11,72 +14,94 @@
       margin: 0;
       font-family: 'Arial', sans-serif;
     }
+
+    /* Navbar container */
     .navbar {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       padding: 15px 20px;
-      background: #f8f8f8;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
     }
+
+    /* Logo */
     .logo {
-      font-size: 2.2em;
+      font-size: 2em;
       font-weight: bold;
       color: #001f4d;
       font-family: 'Glacial Indifference', Arial, sans-serif;
     }
+
+    /* Navigation Links */
     .nav-links {
       display: flex;
-      gap: 30px;
-      align-items: center;
+      gap: 40px;
     }
+
     .nav-link {
-      font-size: 1.3em;
+      font-size: 1.3em; /* smaller than logo */
       color: #333;
       text-decoration: none;
       font-family: 'Cooper Hewitt', Arial, sans-serif;
     }
+
     .nav-link:hover {
       text-decoration: underline;
     }
+
+    /* Right Side (Search + Sign In) */
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
     .search-bar {
       padding: 6px 10px;
-      font-size: 1em;
       border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    .sign-in {
-      padding: 6px 14px;
-      background: #001f4d;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
+      border-radius: 20px;
       font-size: 1em;
     }
-    .sign-in:hover {
-      background: #004080;
+
+    .sign-in-btn {
+      padding: 6px 14px;
+      background-color: #001f4d;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      font-size: 1em;
+      cursor: pointer;
+      font-family: 'Cooper Hewitt', Arial, sans-serif;
+    }
+
+    .sign-in-btn:hover {
+      background-color: #004080;
     }
   </style>
 </head>
 <body>
 
   <nav class="navbar">
-    <div class="logo">DILEDGE</div>
-    <div class="nav-links">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="#">Stories</a>
-      <a class="nav-link" href="#">Thoughts</a>
-      <a class="nav-link" href="#">Classes</a>
-      <a class="nav-link" href="#">Reviews</a>
-      <a class="nav-link" href="about.html">About</a>
-      <!-- ✅ Search + Sign In only on Home -->
+    <!-- Left: Logo + Links -->
+    <div style="display: flex; align-items: center; gap: 50px;">
+      <div class="logo">DILEDGE</div>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="#">Stories</a>
+        <a class="nav-link" href="#">Thoughts</a>
+        <a class="nav-link" href="#">Classes</a>
+        <a class="nav-link" href="#">Reviews</a>
+        <a class="nav-link" href="about.html">About</a>
+      </div>
+    </div>
+
+    <!-- Right: Search + Sign In -->
+    <div class="nav-right">
       <input type="text" class="search-bar" placeholder="Search...">
-      <a class="sign-in" href="#">Sign In</a>
+      <button class="sign-in-btn">Sign In</button>
     </div>
   </nav>
-
-  <h1>Welcome to DILEDGE</h1>
-  <p>This is the homepage where you can explore stories, thoughts, reviews, and more.</p>
 
 </body>
 </html>
