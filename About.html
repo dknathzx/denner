@@ -6,93 +6,39 @@
   <title>About - DILEDGE</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Navbar */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-    }
-
-    .navbar {
-      background-color: #001f3f; /* Navy Blue */
+      background-color: #0a1f44; /* Navy blue background */
       color: white;
+    }
+    .About-section {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      padding: 12px 30px;
-    }
-
-    .logo {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .nav-links a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    .nav-links a:hover,
-    .nav-links .active {
-      border-bottom: 2px solid white;
-      padding-bottom: 3px;
-    }
-
-    .nav-right {
-      display: flex;
-      align-items: center;
-    }
-
-    .search-bar {
-      padding: 6px 10px;
-      border-radius: 5px;
-      border: none;
-      margin-right: 10px;
-    }
-
-    .sign-in-btn {
-      background-color: white;
-      color: #001f3f;
-      border: none;
-      padding: 6px 14px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .sign-in-btn:hover {
-      background-color: #ddd;
-    }
-
-    /* About Section */
-    .about-section {
-      background-color: #001f3f; /* Navy Blue */
-      color: white;
-      padding: 60px 20px;
+      min-height: 80vh;
       text-align: center;
+      padding: 40px;
     }
-
-    .about-container {
+    .About-container {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 12px;
       max-width: 800px;
-      margin: auto;
     }
-
-    .about-container h1 {
-      font-size: 36px;
+    .About-container h1 {
+      font-size: 2.5em;
       margin-bottom: 20px;
       color: #ffffff;
     }
-
-    .about-container p {
-      font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 15px;
+    .About-container p {
+      font-size: 1.2em;
+      line-height: 1.8;
     }
   </style>
 </head>
 <body>
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">DILEDGE</div>
     <div class="nav-links">
@@ -101,7 +47,7 @@
       <a class="nav-link" href="#">Thoughts</a>
       <a class="nav-link" href="#">Classes</a>
       <a class="nav-link" href="#">Reviews</a>
-      <a class="nav-link active" href="about.html">About</a>
+      <a class="nav-link active" href="About.html">About</a>
     </div>
     <div class="nav-right">
       <input type="text" class="search-bar" placeholder="Search...">
@@ -110,8 +56,8 @@
   </nav>
 
   <!-- About Section -->
-  <section class="about-section">
-    <div class="about-container">
+  <section class="About-section">
+    <div class="About-container">
       <h1>About Me</h1>
       <p>
         Hi, I’m the creator of <strong>DILEDGE</strong>.  
