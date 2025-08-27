@@ -5,6 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About - DILEDGE</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Navbar */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .navbar {
+      background-color: #001f3f; /* Navy Blue */
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 30px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover,
+    .nav-links .active {
+      border-bottom: 2px solid white;
+      padding-bottom: 3px;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar {
+      padding: 6px 10px;
+      border-radius: 5px;
+      border: none;
+      margin-right: 10px;
+    }
+
+    .sign-in-btn {
+      background-color: white;
+      color: #001f3f;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .sign-in-btn:hover {
+      background-color: #ddd;
+    }
+
+    /* About Section */
+    .about-section {
+      background-color: #001f3f; /* Navy Blue */
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about-container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .about-container h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .about-container p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
@@ -15,7 +101,7 @@
       <a class="nav-link" href="#">Thoughts</a>
       <a class="nav-link" href="#">Classes</a>
       <a class="nav-link" href="#">Reviews</a>
-      <a class="nav-link active" href="About.html">About</a>
+      <a class="nav-link active" href="about.html">About</a>
     </div>
     <div class="nav-right">
       <input type="text" class="search-bar" placeholder="Search...">
@@ -23,9 +109,9 @@
     </div>
   </nav>
 
-  <!-- ✅ About Section -->
-  <section class="About-section">
-    <div class="About-container">
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-container">
       <h1>About Me</h1>
       <p>
         Hi, I’m the creator of <strong>DILEDGE</strong>.  
