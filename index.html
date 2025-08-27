@@ -39,7 +39,34 @@
     }
     .nav-link:hover {
       text-decoration: underline;
-    }
+      .navbar {
+  justify-content: space-between; /* push right side content to top right */
+}
+
+.nav-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.sign-in-btn {
+  background: #001f4d;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.sign-in-btn:hover {
+  background: #003399;
+}
+
   </style>
 </head>
 <body>
@@ -57,11 +84,11 @@
       <div class="nav-right">
   <input type="text" class="search-bar" placeholder="Search...">
   <button class="sign-in-btn">Sign In</button>
-</div>
 
     </div>
   </nav>
 
 </body>
 </html>
+
 
