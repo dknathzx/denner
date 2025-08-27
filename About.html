@@ -20,9 +20,10 @@
       padding: 20px 0 0 10px;
     }
     .navbar-logo {
-      height: 60px;   /* 👈 Perfect logo size like Google/YouTube */
+      height: 60px;   /* Force visible size */
       width: auto;
       margin-right: 40px;
+      display: block;
     }
     .nav-links {
       display: flex;
@@ -42,7 +43,7 @@
 <body>
 
   <nav class="navbar">
-    <!-- 👇 Replace logo.png with your actual logo file -->
+    <!-- 👇 Ensure logo.png has no white space around it -->
     <img src="logo.png" alt="DILEDGE Logo" class="navbar-logo">
     
     <div class="nav-links">
