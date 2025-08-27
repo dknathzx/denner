@@ -1,20 +1,35 @@
-<nav class="navbar">
-  <!-- Left: Logo + Links -->
-  <div style="display: flex; align-items: center; gap: 50px;">
-    <div class="logo">DILEDGE</div>
-    <div class="nav-links">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="#">Stories</a>
-      <a class="nav-link" href="#">Thoughts</a>
-      <a class="nav-link" href="#">Classes</a>
-      <a class="nav-link" href="#">Reviews</a>
-      <a class="nav-link" href="about.html">About</a>
-    </div>
-  </div>
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
 
-  <!-- Right: Search + Sign In -->
-  <div class="nav-right">
-    <input type="text" class="search-bar" placeholder="Search...">
-    <button class="sign-in-btn">Sign In</button>
-  </div>
-</nav>
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sign-in-btn {
+  padding: 6px 12px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sign-in-btn:hover {
+  background-color: #005bb5;
+}
