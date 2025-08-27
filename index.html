@@ -1,35 +1,107 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 30px;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DILEDGE Navigation</title>
+  <!-- Import Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@700&family=Cooper+Hewitt:wght@400;700&display=swap" rel="stylesheet">
 
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
+  <!-- ✅ Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
 
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+    }
 
-.search-bar {
-  padding: 5px 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
+    /* Navbar container */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
 
-.sign-in-btn {
-  padding: 6px 12px;
-  background-color: #0073e6;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.sign-in-btn:hover {
-  background-color: #005bb5;
-}
+    /* Logo */
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+      color: #001f4d;
+      font-family: 'Glacial Indifference', Arial, sans-serif;
+    }
+
+    /* Navigation Links */
+    .nav-links {
+      display: flex;
+      gap: 40px;
+    }
+
+    .nav-link {
+      font-size: 1.3em; /* smaller than logo */
+      color: #333;
+      text-decoration: none;
+      font-family: 'Cooper Hewitt', Arial, sans-serif;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Right Side (Search + Sign In) */
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .search-bar {
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      font-size: 1em;
+    }
+
+    .sign-in-btn {
+      padding: 6px 14px;
+      background-color: #001f4d;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      font-size: 1em;
+      cursor: pointer;
+      font-family: 'Cooper Hewitt', Arial, sans-serif;
+    }
+
+    .sign-in-btn:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <!-- Left: Logo + Links -->
+    <div style="display: flex; align-items: center; gap: 50px;">
+      <div class="logo">DILEDGE</div>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="#">Stories</a>
+        <a class="nav-link" href="#">Thoughts</a>
+        <a class="nav-link" href="#">Classes</a>
+        <a class="nav-link" href="#">Reviews</a>
+        <a class="nav-link" href="about.html">About</a>
+      </div>
+    </div>
+
+    <!-- Right: Search + Sign In -->
+    <div class="nav-right">
+      <input type="text" class="search-bar" placeholder="Search...">
+      <button class="sign-in-btn">Sign In</button>
+    </div>
+  </nav>
+
+</body>
+</html>
