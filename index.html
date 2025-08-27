@@ -1,33 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DILEDGE - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Diledge</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #4CAF50, #2E7D32);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .content h3 {
+      color: #2E7D32;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">DILEDGE</div>
-    <div class="nav-links">
-      <a class="nav-link active" href="index.html">Home</a>
-      <a class="nav-link" href="#">Stories</a>
-      <a class="nav-link" href="#">Thoughts</a>
-      <a class="nav-link" href="#">Classes</a>
-      <a class="nav-link" href="#">Reviews</a>
-      <a class="nav-link" href="About.html">About</a>
-    </div>
-    <div class="nav-right">
-      <input type="text" class="search-bar" placeholder="Search...">
-      <button class="sign-in-btn">Sign In</button>
-    </div>
-  </nav>
+  <header>
+    <h1>Diledge</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-  <!-- Homepage Content -->
-  <section class="home-section">
-    <h1>Welcome to DILEDGE</h1>
-    <p>Explore stories, thoughts, classes, and reviews. Your place for creativity and learning!</p>
+  <section class="hero">
+    <h2>Welcome to Diledge</h2>
+    <p>
+      A space to share ideas, reviews, and thoughts — where creativity meets community.
+    </p>
   </section>
+
+  <section class="content">
+    <h3>What is Diledge?</h3>
+    <p>
+      Diledge is a platform I created to express opinions, share reviews, and build a community around knowledge and creativity. 
+    </p>
+    <p>
+      Over time, users will be able to contribute, write reviews, and engage in meaningful discussions together.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Diledge. All Rights Reserved.</p>
+    <p>Made with ❤️ and HTML</p>
+  </footer>
 </body>
 </html>
