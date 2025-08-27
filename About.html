@@ -1,61 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DILEDGE Navigation</title>
-  <!-- Import Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@700&family=Cooper+Hewitt:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- ✅ Favicon -->
-  <link rel="icon" href="favicon.png" type="image/png" sizes="512x512">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DILEDGE</title>
+  <link rel="icon" type="image/png" href="favicon.png"> <!-- your logo -->
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      padding: 0;
     }
+
+    /* Navbar */
     .navbar {
       display: flex;
       align-items: center;
-      padding: 20px 0 0 10px;
+      justify-content: space-between;
+      background-color: #111;
+      padding: 10px 20px;
     }
+
     .navbar-logo {
-      height: 60px;   /* Force visible size */
+      height: 60px;   /* logo size */
       width: auto;
-      margin-right: 40px;
-      display: block;
     }
-    .nav-links {
+
+    .navbar ul {
+      list-style: none;
       display: flex;
-      gap: 50px;
+      margin: 0;
+      padding: 0;
     }
-    .nav-link {
-      font-size: 1.5em;
-      color: #333333; /* Dark Grey */
+
+    .navbar ul li {
+      margin-left: 20px;
+    }
+
+    .navbar ul li a {
+      color: white;
       text-decoration: none;
-      font-family: 'Cooper Hewitt', Arial, sans-serif;
+      font-weight: bold;
     }
-    .nav-link:hover {
-      text-decoration: underline;
+
+    .navbar ul li a:hover {
+      color: #00aaff;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    #about {
+      background: #f5f5f5;
+    }
+
+    #about h2 {
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar">
-    <!-- 👇 Ensure logo.png has no white space around it -->
-    <img src="logo.png" alt="DILEDGE Logo" class="navbar-logo">
-    
-    <div class="nav-links">
-      <a class="nav-link" href="#">Home</a>
-      <a class="nav-link" href="#">Stories</a>
-      <a class="nav-link" href="#">Thoughts</a>
-      <a class="nav-link" href="#">Classes</a>
-      <a class="nav-link" href="#">Reviews</a>
-      <a class="nav-link" href="About.html">About</a>
-      <a class="nav-link" href="#">Help</a>
-    </div>
+    <img src="favicon.png" alt="Logo" class="navbar-logo">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
   </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to DILEDGE</h1>
+    <p>Sharing thoughts, reviews, and creative content.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      This site is made by <strong>Dwarakanath K Dinesh</strong>.<br>
+      The goal is content creation, sharing my thoughts and reviews.  
+      As followers increase, users will also be able to write reviews and share their ideas.
+    </p>
+  </section>
 
 </body>
 </html>
