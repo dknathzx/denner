@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>DILEDGE Navigation</title>
-  <!-- Import Glacial Indifference and Cooper Hewitt from Google Fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@700&family=Cooper+Hewitt:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- ✅ Favicon -->
+  <!-- Favicon (tab icon) -->
   <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="shortcut icon" href="favicon.png" type="image/png">
 
   <style>
     body {
@@ -18,22 +17,28 @@
     .navbar {
       display: flex;
       align-items: center;
-      padding: 20px 0 0 10px;
+      padding: 20px 20px;
     }
     .logo {
-      font-size: 2em;
-      font-weight: bold;
-      color: #001f4d; /* Navy Blue */
+      display: flex;
+      align-items: center;
       margin-right: 80px;
       font-family: 'Glacial Indifference', Arial, sans-serif;
+      font-weight: bold;
+      font-size: 2em;
+      color: #001f4d; /* Navy Blue */
+    }
+    .logo img {
+      height: 120px;   /* 👈 make logo bigger (try 120px / 150px) */
+      margin-right: 15px;
     }
     .nav-links {
       display: flex;
-      gap: 70px;
+      gap: 50px;
     }
     .nav-link {
-      font-size: 2em;
-      color: #333333; /* Dark Grey */
+      font-size: 1.5em;
+      color: #333333;
       text-decoration: none;
       font-family: 'Cooper Hewitt', Arial, sans-serif;
     }
@@ -45,7 +50,10 @@
 <body>
 
   <nav class="navbar">
-    <div class="logo">DILEDGE</div>
+    <div class="logo">
+      <img src="favicon.png" alt="DILEDGE Logo"> <!-- 👈 Bigger logo -->
+      DILEDGE
+    </div>
     <div class="nav-links">
       <a class="nav-link" href="#">Home</a>
       <a class="nav-link" href="#">Stories</a>
