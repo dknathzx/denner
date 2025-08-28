@@ -1,62 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stories - DILEDGE</title>
   <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@700&family=Cooper+Hewitt:wght@400;700&display=swap" rel="stylesheet">
-
   <style>
-    html, body {   
+    /* Global & background */
+    body {
       margin: 0;
-      padding: 0 20px;
       font-family: Arial, sans-serif;
+      background-color: #FFFDD0; /* same as About.html */
       overflow-x: hidden;
       box-sizing: border-box;
     }
 
-    /* Navbar same as index.html */
+    /* Navbar styles (same as About.html) */
+    .navbar, .nav-links, .nav-right {
+      flex-wrap: wrap;
+    }
+
     .navbar {
       display: flex;
       align-items: center;
+      padding: 20px 0 0 10px;
       justify-content: space-between;
-      padding: 20px 0;
-      flex-wrap: wrap;
     }
+
     .logo {
       font-size: 2em;
       font-weight: bold;
       color: #001f4d;
+      margin-right: 20px;
       font-family: 'Glacial Indifference', Arial, sans-serif;
     }
+
     .nav-links {
       display: flex;
       gap: 20px;
     }
+
     .nav-link {
-      text-decoration: none;
+      font-size: 1.6em;
       color: #333;
+      text-decoration: none;
+      font-family: 'Cooper Hewitt', Arial, sans-serif;
       padding: 6px 12px;
       border-radius: 8px;
-      font-family: 'Cooper Hewitt', Arial, sans-serif;
       transition: background 0.3s, color 0.3s;
     }
+
     .nav-link:hover {
       background: #f0f0f0;
     }
+
     .nav-link.active {
       background: #001f4d;
       color: white;
     }
+
     .nav-right {
       display: flex;
       gap: 10px;
       align-items: center;
     }
+
     .search-bar {
       padding: 7px 10px;
       border-radius: 20px;
       border: 1px solid #ccc;
     }
+
     .sign-in-btn {
       background: #001f4d;
       color: white;
@@ -66,11 +80,11 @@
       cursor: pointer;
       transition: 0.3s;
     }
+
     .sign-in-btn:hover {
       background: #004080;
     }
 
-    /* Responsive navbar */
     @media screen and (max-width: 768px) {
       .navbar {
         flex-direction: column;
@@ -81,12 +95,29 @@
       }
     }
 
-    /* Books section */
-    h1 {
+    /* Stories page layout like About.html */
+    .stories-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
       text-align: center;
-      color: #001f4d;
-      margin-top: 20px;
+      padding: 40px;
     }
+
+    .stories-container {
+      background: rgba(255,255,255,0.1);
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 900px;
+    }
+
+    .stories-container h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #000080;
+    }
+
     .books {
       display: flex;
       flex-wrap: wrap;
@@ -94,6 +125,7 @@
       justify-content: center;
       margin-top: 30px;
     }
+
     .book {
       width: 200px;
       text-align: center;
@@ -104,22 +136,25 @@
       cursor: pointer;
       text-decoration: none;
       color: inherit;
+      background: white;
     }
+
     .book:hover {
       transform: scale(1.05);
       box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
     }
+
     .book img {
       max-width: 100%;
       border-radius: 5px;
     }
+
     .book-title {
       margin-top: 10px;
       font-weight: bold;
       color: #333;
     }
 
-    /* Mobile responsive books */
     @media screen and (max-width: 600px) {
       .books {
         flex-direction: column;
@@ -130,6 +165,7 @@
         margin-bottom: 20px;
       }
     }
+
   </style>
 </head>
 <body>
@@ -137,7 +173,6 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">DILEDGE</div>
-
     <div class="nav-links">
       <a class="nav-link" href="index.html">Home</a>
       <a class="nav-link active" href="Stories.html">Stories</a>
@@ -147,34 +182,25 @@
       <a class="nav-link" href="About.html">About</a>
       <a class="nav-link" href="#">Help</a>
     </div>
-
     <div class="nav-right">
       <input type="text" class="search-bar" placeholder="Search...">
       <button class="sign-in-btn">Sign In</button>
     </div>
   </nav>
 
-  <h1>My Books</h1>
-
-  <div class="books">
-  <a class="book" href="https://www.amazon.in/TOMMY-FENECH-Dwarakanath-Dinesh-ebook/dp/B0F6NQHJW4/ref=sr_1_1?crid=1Y5V8R4QUZ09Q&dib=eyJ2IjoiMSJ9.tg7TaZTw3pwfrPljndqRURekmjup6T3lAzH2wOdDtbm0lxsFtOcTIWwxcBd0Djhc4wQ3G8z7a3Ln4p5KMzd_YIw41MIgcniWUjI_Fkwrae8DPkVm16bQyBSd-8t-xG4lZwTIjANGVi4M9bAdt8a02phsK-i6XeO4pb2uNFb-cH-UEKYshHVSUwlEQGynwj3qULmP77OyQY6MdCOvGU48XrL3-o3PUYqP54YWmb42I-4.cTWplypA5Ae9O162m7pRAvOI3W0fomlKe7gCgjwM6I8&dib_tag=se&keywords=tommy+fenech&nsdOptOutParam=true&qid=1756306058&sprefix=tommy+fene%2Caps%2C302&sr=8-1"_blank">
-    <img src="images/mybook.jpg" alt="My Book">
-    <div class="Tommy Fenech">My Book Title</div>
-  </a>
-
-    <!-- Add more books -->
-  </div>
-
-  <script>
-    // Navbar active class
-    const links = document.querySelectorAll('.nav-link');
-    links.forEach(link => {
-      link.addEventListener('click', function() {
-        links.forEach(l => l.classList.remove('active'));
-        this.classList.add('active');
-      });
-    });
-  </script>
+  <!-- Stories Section -->
+  <section class="stories-section">
+    <div class="stories-container">
+      <h1>My Books</h1>
+      <div class="books">
+        <a class="book" href="https://www.amazon.in/TOMMY-FENECH-Dwarakanath-Dinesh-ebook/dp/B0F6NQHJW4" target="_blank">
+          <img src="images/mybook.jpg" alt="My Book">
+          <div class="book-title">My Book Title</div>
+        </a>
+        <!-- Add more books here -->
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
